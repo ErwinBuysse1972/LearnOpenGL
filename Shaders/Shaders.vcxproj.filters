@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{cab7de3b-e475-46ed-a837-eaeb303e33f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{d6d33155-261a-49ff-8ac1-ad822beaa103}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Shaders.cpp" />
+    <ClCompile Include="Helper\cfunctracer.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\cscopedtimer.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\ctracer.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\Shader.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\Texture2D.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\Camera.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBasic_Attributes.cpp" />
+    <ClCompile Include="SceneRunner.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SceneBasic_Uniform.cpp" />
+    <ClCompile Include="SceneBasic_Uniformblock.cpp" />
+    <ClCompile Include="..\..\ThirdParty\src\GLAD\glad.c" />
+    <ClCompile Include="SceneSeparable.cpp" />
+    <ClCompile Include="Helper\Torus.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\TriangleMesh.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneDiffuse.cpp" />
+    <ClCompile Include="ScenePhong.cpp" />
+    <ClCompile Include="Helper\teapot.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="scenetwoside.cpp" />
+    <ClCompile Include="Helper\objMesh.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneflat.cpp" />
+    <ClCompile Include="scenesubroutine.cpp" />
+    <ClCompile Include="scenediscard.cpp" />
+    <ClCompile Include="Helper\Plane.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\glslprogram.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\GLUtils.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMultilight.cpp" />
+    <ClCompile Include="SceneDirectional.cpp" />
+    <ClCompile Include="ScenePerFragment.cpp" />
+    <ClCompile Include="SceneSpot.cpp" />
+    <ClCompile Include="SceneCartoon.cpp" />
+    <ClCompile Include="SceneFog.cpp" />
+    <ClCompile Include="SceneBPR.cpp" />
+    <ClCompile Include="Helper\Cube.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTexture.cpp" />
+    <ClCompile Include="Helper\texture.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMultiTex.cpp" />
+    <ClCompile Include="SceneAlphaTest.cpp" />
+    <ClCompile Include="SceneNormal.cpp" />
+    <ClCompile Include="SceneParallax.cpp" />
+    <ClCompile Include="Helper\skybox.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneReflectCube.cpp" />
+    <ClCompile Include="SceneRefractCube.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Helper\cfunctracer.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\cscopedtimer.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\ctracer.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\Shader.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\Texture2D.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\Camera.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\Scene.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBasic_Attributes.h" />
+    <ClInclude Include="SceneRunner.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBasic_Uniform.h" />
+    <ClInclude Include="SceneBasic_Uniformblock.h" />
+    <ClInclude Include="SceneSeparable.h" />
+    <ClInclude Include="SceneDiffuse.h" />
+    <ClInclude Include="Helper\Torus.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\TriangleMesh.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\Drawable.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenePhong.h" />
+    <ClInclude Include="scenetwoside.h" />
+    <ClInclude Include="Helper\teapot.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\teapotdata.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneflat.h" />
+    <ClInclude Include="Helper\objMesh.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\aabb.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\utils.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="scenesubroutine.h" />
+    <ClInclude Include="scenediscard.h" />
+    <ClInclude Include="SceneMultilight.h" />
+    <ClInclude Include="Helper\Plane.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\glslprogram.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\GLUtils.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDirectional.h" />
+    <ClInclude Include="ScenePerFragment.h" />
+    <ClInclude Include="SceneSpot.h" />
+    <ClInclude Include="SceneCartoon.h" />
+    <ClInclude Include="SceneFog.h" />
+    <ClInclude Include="SceneBPR.h" />
+    <ClInclude Include="SceneTexture.h" />
+    <ClInclude Include="Helper\Cube.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\texture.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMultiTex.h" />
+    <ClInclude Include="scenealphatest.h" />
+    <ClInclude Include="SceneNormal.h" />
+    <ClInclude Include="SceneParallax.h" />
+    <ClInclude Include="SceneReflectCube.h" />
+    <ClInclude Include="Helper\skybox.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRefractCube.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\basic.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\uniform.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\uniform.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Texture.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Texture.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\camera.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\camera.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\basic_color.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\basic_color.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\basic.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\basic.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\basic_uniform.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\basic_uniform.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\basic_uniformblock.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\basic_uniformblock.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\separable.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\separable1.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\separable2.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\diffuse.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\diffuse.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\phong.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\phong.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\function.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\function.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\twoside.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\twoside.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\twoside_conditional.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\twoside_conditional.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\flat.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\flat.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\subroutine.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\subroutine.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\discard.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\discard.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\multilight.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\multilight.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\directional.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\directional.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\pbr.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\perfrag.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\perfrag.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\blinnphong.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\blinnphong.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\spot.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\spot.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\cartoon.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\cartoon.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\fog.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\fog.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\pbr.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\texture.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\texture.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\multitex.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\multitex.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\alphatest.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\alphatest.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\normalmap.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\normalmap.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\parallax.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\parallax.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\steep-parallax.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\steep-parallax.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\cubemap_reflects.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\cubemap_reflects.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\cubemap_refract.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\cubemap_refract.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\skybox.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\skybox.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
