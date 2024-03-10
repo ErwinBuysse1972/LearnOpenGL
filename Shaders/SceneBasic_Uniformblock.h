@@ -25,6 +25,9 @@ public:
     void initScene();
     void update(float t);
     void render();
+    void renderGuiWindow(ImGuiIO* io) override {};
+    void renderOtherGuiWindow(ImGuiIO* io)override {};
+
     void resize(int, int);
 };
 

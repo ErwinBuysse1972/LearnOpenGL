@@ -7,6 +7,7 @@ using glm::mat4;
 using glm::vec3;
 
 #include <texture.h>
+#include <imgui.h>
 #include "SceneReflectCube.h"
 
 SceneReflectCube::SceneReflectCube(std::shared_ptr<CTracer> tracer)
@@ -15,6 +16,7 @@ SceneReflectCube::SceneReflectCube(std::shared_ptr<CTracer> tracer)
     , m_sky(100.0f)
     , m_angle(0.0f)
     , m_tPrev(0.0f)
+    , m_ulCountClicks(0)
     , m_rotSpeed(glm::pi<float>() / 8.0f)
 {
     CFuncTracer trace("SceneReflectCube::SceneReflectCube", m_trace);
@@ -105,6 +107,36 @@ void SceneReflectCube::render()
     {
         trace.Error("Exception occurred : %s", ex.what());
         exit(EXIT_FAILURE);
+    }
+}
+void SceneReflectCube::renderGuiWindow(ImGuiIO* io)
+{
+    CFuncTracer trace("SceneReflectCube::renderGuiWindow", m_trace);
+    try
+    {
+        static float f = 0.0f;
+        static int counter = 0;
+
+        ImGui::Begin("Hello world!");
+
+        ImGui::Text("This is some usefull text");
+        ImGui::Checkbox("Demo Window", &m_show_demo_window);
+        ImGui::Checkbox("Another window", &m_show_other_window);
+
+        ImGui::SliderFloat("float", &f, 0.0f, 1.0f);
+        ImGui::ColorEdit3("clear color", (float*)&m_clearColor);
+
+        if (ImGui::Button("Button"))
+            m_ulCountClicks++;
+
+        ImGui::SameLine();
+        ImGui::Text("Counter clicks = %ld", m_ulCountClicks);
+        ImGui::Text("Application average %.3f ms/frame (%.2f FPS)", 1000.0f / io->Framerate, io->Framerate);
+        ImGui::End();
+    }
+    catch (const std::exception& ex)
+    {
+        trace.Error("Exception occurred : %s", ex.what());
     }
 }
 void SceneReflectCube::resize(int w, int h)

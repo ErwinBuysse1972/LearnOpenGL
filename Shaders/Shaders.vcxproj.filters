@@ -11,6 +11,9 @@
     <Filter Include="Shaders">
       <UniqueIdentifier>{d6d33155-261a-49ff-8ac1-ad822beaa103}</UniqueIdentifier>
     </Filter>
+    <Filter Include="imGui">
+      <UniqueIdentifier>{cf076e81-52f4-450d-888c-89ada8577843}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Shaders.cpp" />
@@ -91,6 +94,67 @@
     </ClCompile>
     <ClCompile Include="SceneReflectCube.cpp" />
     <ClCompile Include="SceneRefractCube.cpp" />
+    <ClCompile Include="..\..\ThirdParty\Lib\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ThirdParty\Lib\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ThirdParty\Lib\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ThirdParty\Lib\imgui\imgui.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ThirdParty\Lib\imgui\imgui_draw.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ThirdParty\Lib\imgui\imgui_tables.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ThirdParty\Lib\imgui\imgui_widgets.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ThirdParty\Lib\imgui\imgui_demo.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMOW.cpp" />
+    <ClCompile Include="Helper\Scene.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRenderToTex.cpp" />
+    <ClCompile Include="SceneSamplerObj.cpp" />
+    <ClCompile Include="SceneDiffIbl.cpp" />
+    <ClCompile Include="SceneEdgeDetection.cpp" />
+    <ClCompile Include="SceneToneMap.cpp" />
+    <ClCompile Include="Helper\Sphere.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGausianBlur.cpp" />
+    <ClCompile Include="SceneHDRBloom.cpp" />
+    <ClCompile Include="SceneGamma.cpp" />
+    <ClCompile Include="SceneMultiSampleAntiAliasing.cpp" />
+    <ClCompile Include="SceneDeferredShading.cpp" />
+    <ClCompile Include="SceneSpaceAmbientOcclusion.cpp" />
+    <ClCompile Include="SceneOrderIndependentTransparency.cpp" />
+    <ClCompile Include="ScenePointSprites.cpp" />
+    <ClCompile Include="SceneShadeWire.cpp" />
+    <ClCompile Include="SceneSilhouette.cpp" />
+    <ClCompile Include="SceneBezierCurve.cpp" />
+    <ClCompile Include="SceneQuadTesselation2D.cpp" />
+    <ClCompile Include="SceneTessTeapot.cpp" />
+    <ClCompile Include="Helper\teapotpatch.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTessTeapotDepth.cpp" />
+    <ClCompile Include="SceneShadowMap.cpp" />
+    <ClCompile Include="Helper\frustum.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenePcfFilter.cpp" />
+    <ClCompile Include="Helper\noiseTex.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helper\cfunctracer.h">
@@ -183,11 +247,57 @@
       <Filter>Helper</Filter>
     </ClInclude>
     <ClInclude Include="SceneRefractCube.h" />
+    <ClInclude Include="..\..\ThirdParty\Lib\imgui\backends\imgui_impl_glfw.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\Lib\imgui\backends\imgui_impl_opengl3.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\Lib\imgui\backends\imgui_impl_opengl3_loader.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\Lib\imgui\backends\imgui_impl_win32.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMOW.h" />
+    <ClInclude Include="SceneRenderToTex.h" />
+    <ClInclude Include="SceneSamplerObj.h" />
+    <ClInclude Include="SceneDiffIbl.h" />
+    <ClInclude Include="SceneEdgeDetection.h" />
+    <ClInclude Include="SceneToneMap.h" />
+    <ClInclude Include="Helper\Sphere.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGausianBlur.h" />
+    <ClInclude Include="SceneHDRBloom.h" />
+    <ClInclude Include="SceneGamma.h" />
+    <ClInclude Include="SceneMultiSampleAntiAliasing.h" />
+    <ClInclude Include="SceneDeferredShading.h" />
+    <ClInclude Include="SceneSpaceAmbientOcclusion.h" />
+    <ClInclude Include="Helper\random.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneOrderIndependentTransparency.h" />
+    <ClInclude Include="ScenePointSprites.h" />
+    <ClInclude Include="SceneShadeWire.h" />
+    <ClInclude Include="SceneSilhouette.h" />
+    <ClInclude Include="SceneBezierCurve.h" />
+    <ClInclude Include="SceneQuadTesselation2D.h" />
+    <ClInclude Include="SceneTessTeapot.h" />
+    <ClInclude Include="Helper\teapotpatch.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTessTeapotDepth.h" />
+    <ClInclude Include="SceneShadowMap.h" />
+    <ClInclude Include="Helper\frustum.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenePcfFilter.h" />
+    <ClInclude Include="Helper\noiseTex.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\basic.vert">
-      <Filter>Shaders</Filter>
-    </None>
     <None Include="Shaders\uniform.vert">
       <Filter>Shaders</Filter>
     </None>
@@ -387,6 +497,192 @@
       <Filter>Shaders</Filter>
     </None>
     <None Include="Shaders\skybox.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\MOW_Ocean.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\MOW_Ocean.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\rendertotex.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\rendertotex.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\diffuseibl.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\diffuseibl.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\edge.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\edge.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Ocean.tes.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Ocean.tcs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Ocean.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Ocean.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tonemap.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tonemap.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\blur.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\blur.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\hdrbloom.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\hdrbloom.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\gamma.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\gamma.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\centroids.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\centroids.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\deferred.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\deferred.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\ssao.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\ssao.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\oit.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\oit.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\pointssprite.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\pointssprite.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\pointssprite.geom.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadewire.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadewire.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadewire.geom.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\silhouette.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\silhouette.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\silhouette.geom.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\bezcurve.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\bezcurve.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\bezcurve.tcs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\bezcurve.tes.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\solid.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\solid.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\quadtess.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\quadtess.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\quadtess.tcs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\quadtess.tes.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\quadtess.geom.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapot.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapot.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapot.tcs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapot.tes.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapot.geom.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapotdepth.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapotdepth.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapotdepth.tcs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapotdepth.tes.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tessteapotdepth.geom.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadowmap.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadowmap.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\pcf.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\pcf.frag.glsl">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>

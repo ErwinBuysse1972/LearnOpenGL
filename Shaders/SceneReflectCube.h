@@ -19,6 +19,9 @@ private:
     float       m_angle;
     float       m_tPrev;
     float       m_rotSpeed;
+    float       m_clearColor;
+
+    unsigned long m_ulCountClicks;
 
     void SetMatrices(GLSLProgram& p);
     void CompileAndLinkShader();
@@ -29,6 +32,9 @@ public:
     void initScene() override;
     void update(float t) override;
     void render() override;
+    void renderGuiWindow(ImGuiIO* io) override;
+    void renderOtherGuiWindow(ImGuiIO* io)override {};
+
     void resize(int w, int h) override;
 
 };
